@@ -173,6 +173,7 @@
             this.btnMultiplicar.TabIndex = 2;
             this.btnMultiplicar.Text = "Multiplicar";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // Form1
             // 

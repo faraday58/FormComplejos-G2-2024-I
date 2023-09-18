@@ -29,5 +29,15 @@ namespace FormComplejos_G2_2024_I
         {
             lbSuma.Text = (~c3).ToString();
         }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            c1 = new Complejo(float.Parse(txtbReal1.Text), float.Parse(txtbImaginaria1.Text));
+            c2 = new Complejo(float.Parse(txtbReal2.Text), float.Parse(txtbImaginaria2.Text));
+
+            c3 = c1 * c2;
+            lbSuma.Text = c3.ToString();
+
+        }
     }
 }
