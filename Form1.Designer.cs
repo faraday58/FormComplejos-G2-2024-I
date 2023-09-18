@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtbReal1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtbImaginaria1 = new System.Windows.Forms.TextBox();
@@ -43,6 +44,8 @@
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnConjugar = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtbReal1
@@ -175,6 +178,10 @@
             this.btnMultiplicar.UseVisualStyleBackColor = true;
             this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,6 +204,7 @@
             this.Controls.Add(this.txtbReal1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +227,7 @@
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnConjugar;
         private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
